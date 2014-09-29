@@ -1,5 +1,5 @@
 /**
- * Exercise 0: angryGandalf (example)
+ * Exercise 0: angryGandalf (example) went through in class
 **/
  
 // Define angryGandalf with input parameters
