@@ -34,7 +34,7 @@ var angryGandalf = function(type) {
 // Create function with name tellFortune and appropriate parameters
 var tellFortune = function(job,location,partner,children) {
 	// takes 4 arguments: number of children, partner's name, geographic location, job title.
- 
+
 	// Define string variable that will have that output
 	var fortune = "You will be a " + job + " in " + location + ", and married to " + partner + " with " + children + " kids."
 	
