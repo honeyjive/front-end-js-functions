@@ -13,6 +13,43 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript">
 
+		function startsWithVowel(word) {
+		  var word = word.toLowerCase();
+		  var firstLetter = word.charAt(0);
+		  var vowels = ["a", "e", "i", "o", "u"];
+		  
+		  var result = false;
+		   
+		  for (var i = 0; i < vowels.length; i++) {
+		    if (firstLetter === vowels[i]) {
+		      result = true;
+		      break;
+		    }
+		  }
+		  
+		  return result;
+
+		}
+
+		function lifeLine(job, location, spouse, children) {
+		  
+		  var string = "You are ";
+		  if (startsWithVowel(job) === true) {
+		    string += "an ";
+		  } else {
+		    string += "a ";
+		  }
+		  string += job;
+		  string += " from ";
+		  string += location;
+		  string += " and married to ";
+		  string += spouse;
+		  string += " with ";
+		  string += children;
+		  string += " kids.";
+		  
+		  return string;
+		}
 
   </script>
 
